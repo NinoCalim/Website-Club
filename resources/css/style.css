@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #191919;
+
+}
+
+/*Header*/
+header {
+    width: 100%;
+    position: fixed;
+    background-image: url(https://th.bing.com/th/id/R.4c44ffb3128ea2386e94675af604a8e4?rik=rh4H8KfpM7jGNg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fBlack-Background-Images.jpg&ehk=GF%2fx2TdurjLr3LDjKtvz4uUtmU48SpF%2f2z3z1mHxg0E%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+}
+header .header-container {
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header-container .logo {
+    margin: 10px 20px;
+}
+.header-container .logo h1 {
+    color: white;
+    font-family: Gloock, sans-serif;
+    font-size: 2rem;
+}
+.header-container .nav {
+    align-items: center;
+    float: right;
+}
+
+.header-container .nav ul {
+    list-style: none;
+    display: flex;
+
+}
+.header-container .nav .desktop ul li {
+    margin: 10px;
+}
+.header-container .nav .desktop ul li a {
+    color: #f9004d;
+    font-size: 1.1rem;
+
+}
+.header-container .nav .desktop ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav .desktop .btn-nav {
+    --background-color: transparent;
+    --background-color-dark: white;
+    border: 1px solid white;
+    padding: 2px 16px;
+    background-color: var(--background-color);
+    box-shadow: 4px 4px 0 var(--background-color-dark);
+    display: inline-block;
+}
+.nav .mobile .btn-nav {
+    --background-color: transparent;
+    --background-color-dark: white;
+    border: 1px solid white;
+    background-color: var(--background-color);
+    box-shadow: 4px 4px 0 var(--background-color-dark);
+    display: inline-block;
+}
+
+
+.nav .btn-nav:active {
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 1px 1px 0 var(--background-color-dark);
+}
+.header-container .nav .mobile {
+    display: none;
+}
+
+
+@media only screen and (min-width: 492px) and (max-width: 768px) {
+
+    .header-container .nav .desktop {
+        display: none;
+    }
+    .header-container .logo h1 {
+        font-size: .9rem;
+        margin: 10px;
+    }
+    .header-container .nav .mobile {
+        display: inline-block;
+        margin: 5px;
+    }
+    .header-container .nav .mobile li {
+        margin: 10px;
+    }
+    .header-container .nav .mobile li a {
+        font-size: .8rem;
+        color: #f9004d;
+    }
+
+    .header-container .nav .mobile li a:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 491px) {
+
+    .header-container .nav .desktop {
+        display: none;
+    }
+    .header-container {
+        height: 30px;
+    }
+    .header-container .logo h1 {
+        font-size: .9rem;
+        margin: 10px;
+    }
+    .header-container .nav .mobile {
+        display: inline-block;
+        margin: 5px;
+    }
+    .header-container .nav .mobile li {
+        margin: 10px;
+    }
+    .header-container .nav .mobile li a {
+        font-size: .450rem;
+        color: white;
+    }
+    .header-container .nav .mobile li a:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+/*Header-End*/
+
+#home {
+    height: 100vh;
+    background-image: url(../img/home-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#home .home-container {
+    border: 1px solid white;
+    margin-left: 50px;
+    height: 20rem;
+    width: 30rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif);
+
+}
+
+.home-container .home-content {
+    border: 1px solid white;
+    background-image: url(https://th.bing.com/th/id/R.4c44ffb3128ea2386e94675af604a8e4?rik=rh4H8KfpM7jGNg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fBlack-Background-Images.jpg&ehk=GF%2fx2TdurjLr3LDjKtvz4uUtmU48SpF%2f2z3z1mHxg0E%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.home-content .home-content-text {
+    color: white;
+    box-sizing: border-box;
+}
+.home-content .home-content-text h3 {
+   font-size: 1.1rem;
+   font-family: 'Sono', sans-serif;
+   text-align: center;
+}
+.home-content .home-content-text h3 .typewriting {
+    position: relative;
+    font-size: 2rem;
+    font-family: Gloock, sans-serif;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 0.3vw transparent;
+}
+.home-content .home-content-text h3 .typewriting::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0vw transparent;
+    border-right: 1px solid white;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+.home-content .home-content-text .qts {
+    font-size: 0.9rem;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.home-content .home-content-text p {
+    font-size: 0.9rem;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.home-content .home-content-text .home-btn {
+    float: right;
+    margin: 10px;
+}
+.home-content .home-content-text .home-btn a {
+    color: #f9004d;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+.home-content .home-content-text .home-btn a:hover {
+    color: white;
+    
+}
+
+.home-content .home-content-text .home-btn {
+    --background-color: transparent;
+    --background-color-dark: white;
+    border: 1px solid white;
+    padding: 2px 16px;
+    background-color: var(--background-color);
+    box-shadow: 4px 4px 0 var(--background-color-dark);
+    display: inline-block;
+}
+.home-content .home-content-text .home-btn:active {
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 1px 1px 0 var(--background-color-dark);
+}
+
+@media only screen and (max-width: 568px) {
+    .home-content .home-content-text h3 {
+        font-size: 0.7rem;
+    }
+    .home-content .home-content-text h3 span{
+        font-size: 0.8rem;
+    }
+    .home-content .home-content-text p{
+        font-size: 0.5rem;
+    }
+    .home-content .home-content-text .home-btn {
+        font-size: 0.6rem;
+    }
+
+    #home .home-container {
+        height: 15rem;
+        width: 25rem;
+    }
+    .home-content .home-content-text .home-btn a {
+        color: #f9004d;
+    }
+ 
+}
+
+
+
+
+/*About Us*/
+#about-us {
+    font-family: 'Source Code Pro', monospace;
+
+}
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+.about img{
+    height: 500px;
+    width: 400px;
+    margin-right: 10px;
+}
+.about-text{
+    width: 550px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-text h1 {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.about-text h5 {
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+span {
+    color: #f9004d;
+}
+
+.about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin-bottom: 45px;
+}
+.about-btn {
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.about-btn:hover {
+    background:transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+
+/*Event*/
+
+
+.event-title {
+    text-align: center;
+}
+.event-container {
+    font-family: 'Source Code Pro', monospace;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+  
+.event-container h3.year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+}
+  
+.event-container .event {
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+    border: 1px solid white;
+
+}
+  
+.event .event-left {
+    background: #222;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+}
+  
+.event .event-left .date {
+    font-size: 56px;
+}
+  
+.event .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+}
+  
+.event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+}
+  
+.event .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #f9004d;
+    text-transform: uppercase;
+}
+  
+.event .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.event .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+}
+  
+@media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+  
+    .event .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event .event-left .event-date {
+      padding: 10px 0;
+    }
+}
+
+
+/*Sign-up*/
+
+#sign-up {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+
+}
+.signup {
+    width: 330px;
+    padding: 2rem 0 1rem 0;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+}
+.signup h1{
+    font-size: 2rem;
+}
+.signup p{
+    margin-bottom: 1.7rem;
+}
+.signup form input{
+    width: 85%;
+    outline: none;
+    border: none;
+    background: #dfe9f5;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.recover-pass {
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0.2rem 1.7rem 0 0;
+}
+.recover-pass a{
+    text-decoration: none;
+    color: #f9004d;
+}
+.recover-pass a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.signup button{
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 85%;
+    background: #f9004d;
+    color: white;
+    cursor: pointer;
+}
+.signup button:hover{
+    color: white;
+    background-color: black;
+}
+.or{
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.icons i{
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-left: .9rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid #dfe9f5;
+    background-color: white;
+
+}
+.icons i:hover {
+    background: black;
+    transition: 1s;
+    color: white;
+}
+
+.not-member{
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+}
+.not-member a{
+    color: tomato;
+    text-decoration: none;
+}
+.not-member :hover{
+    text-decoration: underline;
+    color: white;
+}
